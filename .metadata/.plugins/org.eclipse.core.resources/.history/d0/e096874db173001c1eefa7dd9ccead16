@@ -1,0 +1,29 @@
+package PhieuBT;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			System.out.println("\t======Giai thừa======");
+			System.out.print("Nhập vào số cần tính:  ");
+			int n;
+			do {
+				n = sc.nextInt();
+				if(n < 0)
+					System.out.println("Không hợp lệ. Hãy nhập lại");
+			}while(n < 0);
+			
+			System.out.println("Giai thừa của " + n + " là: " + Source.factorial(n));
+		}
+		catch (Exception e) {
+			System.out.println("Hãy nhập một số nguyên dương");
+		}
+		
+		sc.close();
+	}
+
+}

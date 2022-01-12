@@ -1,0 +1,26 @@
+import java.lang.reflect.Array;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class stt_50_VuBinhMinh_bai8 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int[] arr = {1,2,5,8,9,15,21,30};
+		
+		try {
+			System.out.print("Nhập số bạn muốn thêm: ");
+			int n = sc.nextInt();
+			
+			arr[arr.length] = n;
+			
+			for(int i : arr) System.out.println(i);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

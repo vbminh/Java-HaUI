@@ -1,0 +1,27 @@
+package PhieuBT;
+
+import java.util.Scanner;
+
+public class Mang {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int[] arr = {1,2,3,4,5,6,7,8,9,0};
+		System.out.print("Nhập vị trí bạn cần tìm: ");
+		int x;
+		do {
+			x = sc.nextInt();
+			if(x < 0 || x > arr.length)
+				System.out.print("Vị trí không hợp lệ. Hãy nhập lại ");
+		}while(x < 0 || x > arr.length);
+		
+		for(int i = 0; i < arr.length; i++) {
+			if(i == x)
+				System.out.print("Vị trí " + x + " trong mảng có giá trị là: " + arr[i]);
+		}
+		sc.close();
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class stt_50_VuBinhMinh_bai15 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			System.out.print("Nhập vào một chuỗi: ");
+			String str = sc.nextLine();
+			sc.close();
+			
+			
+			System.out.print(str.valueOf(0));
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

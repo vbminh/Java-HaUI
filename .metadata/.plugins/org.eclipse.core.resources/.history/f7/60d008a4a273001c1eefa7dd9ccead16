@@ -1,0 +1,20 @@
+package PhieuBT;
+
+import java.util.Scanner;
+
+public class Chuoi {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Nhập vào chuỗi: ");
+		String str = sc.nextLine();
+		
+		String str1 = str.replaceAll(" ","");
+		char[] ch = str1.toCharArray();
+		String s = String.copyValueOf(ch);
+
+		System.out.println(ch);
+	}
+
+}
