@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class stt_50_VuBinhMinh_bai16_19 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			System.out.print("Nhập vào một chuỗi: ");
+			String str = sc.nextLine();
+			sc.close();
+			
+			String[] str1 = str.split(" ");
+			System.out.println("Chuỗi vừa nhập có: " + str1.length + " từ");
+			
+			for(int i = 0; i < str1.length; i++) {
+				char[] ch = str1[i].toCharArray();
+				ch[0] = Character.toUpperCase(ch[0]);
+				str1[i] = new String(ch);
+			}
+			String str2 = str.join(" ", str1);
+			System.out.println(str2);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

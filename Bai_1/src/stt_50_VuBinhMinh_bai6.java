@@ -26,7 +26,7 @@ public class stt_50_VuBinhMinh_bai6 {
 			return false;
 		else if(n < 2)
 			return false;
-		for(int i = 2; i < (int)Math.sqrt(n); i++) {
+		for(int i = 2; i <= Math.sqrt(n); i++) {
 			if(n % i == 0) return false;
 		}
 		return true;

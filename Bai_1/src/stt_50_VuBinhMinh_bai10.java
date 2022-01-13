@@ -8,22 +8,27 @@ public class stt_50_VuBinhMinh_bai10 {
 		System.out.print("Cho mảng: ");
 		for(int i : arr) System.out.print(i + " ");
 		
-		String snt = "";
-		String sn = "";
+		String str1 = "";
+		String str2 = "";
 		for(int i : arr) {
-			if(SoNguyenTo(i)) snt += String.valueOf(i);
-			else sn = String.valueOf(i);
+			if(SoNguyenTo(i)) str1 += i;
+			else str2 += i;
 		}
-		System.out.print(snt + " " + sn);
 		
-		Arrays.sort(snt.toCharArray());
-		Arrays.sort(sn.toCharArray());
+		char[] ch1 = str1.toCharArray();
+		char[] ch2 = str2.toCharArray();
+		Arrays.sort(ch1);
+		Arrays.sort(ch2);
 		
-		char[] arr1 = new char[snt.length() + sn.length()];
-		System.arraycopy(snt.toCharArray(), 0, arr1, 0, snt.length());
-		System.arraycopy(sn.toCharArray(), 0, arr1, snt.length(), sn.length());
+		int[] arr1 = new int[arr.length];
+		for(int i = 0; i < ch1.length; i++) {
+			arr1[i] = Integer.parseInt(String.valueOf(ch1[i]));
+		}
+		for(int i = 0; i < ch2.length; i++) {
+			arr1[ch1.length + i] = Integer.parseInt(String.valueOf(ch2[i]));
+		}
 		
-		System.out.println("Mảng sau khi sắp xếp: ");
+		System.out.println("\nMảng sau khi tìm và sắp xếp: ");
 		for(int i : arr1) System.out.print(i + " ");
 	}
 	public static boolean SoNguyenTo(int n) {
@@ -31,7 +36,7 @@ public class stt_50_VuBinhMinh_bai10 {
 			return false;
 		else if(n < 2)
 			return false;
-		for(int i = 2; i < (int)Math.sqrt(n); i++) {
+		for(int i = 2; i <= Math.sqrt(n); i++) {
 			if(n % i == 0) return false;
 		}
 		return true;
