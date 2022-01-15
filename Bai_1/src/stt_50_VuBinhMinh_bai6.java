@@ -14,7 +14,7 @@ public class stt_50_VuBinhMinh_bai6 {
 			if(SoNguyenTo(n))
 				System.out.println(n + " là số nguyên tố");
 			else 
-				System.out.println(n + " không là số nguyên tố");
+				System.out.println(String.format("%s không là số nguyên tố", n));
 		}
 		catch (Exception e) {
 			System.out.print("Hãy nhập vào một số");
