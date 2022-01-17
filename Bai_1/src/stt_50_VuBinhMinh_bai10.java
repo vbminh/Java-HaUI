@@ -29,7 +29,7 @@ public class stt_50_VuBinhMinh_bai10 {
 		}
 		
 		System.out.println("\nMảng sau khi tìm và sắp xếp: ");
-		for(int i : arr1) System.out.print(i + " ");
+		for(int i : arr1) System.out.print(i);
 	}
 	public static boolean SoNguyenTo(int n) {
 		if(n < 0)

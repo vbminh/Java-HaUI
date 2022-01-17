@@ -21,6 +21,7 @@ public class stt_50_VuBinhMinh_bai6 {
 		}
 
 	}
+	
 	public static boolean SoNguyenTo(int n) {
 		if(n < 0)
 			return false;

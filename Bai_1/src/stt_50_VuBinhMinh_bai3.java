@@ -21,7 +21,6 @@ public class stt_50_VuBinhMinh_bai3 {
 		catch (Exception e) {
 			System.out.println("Hãy nhập một số nguyên dương");
 		}
-		
 	}
 	
 	public static int factorial(int n) {

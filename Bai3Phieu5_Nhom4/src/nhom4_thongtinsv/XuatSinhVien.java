@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @author Vũ Bình Minh
+ *	Trần Văn Thái
+ *	Đặng Thanh Tùng
+ *	Trần Nhật Hoàng
+ *	Lê Văn Trung
+ */
+
 public class XuatSinhVien {
 
 	public static Scanner sc = new Scanner(System.in);
