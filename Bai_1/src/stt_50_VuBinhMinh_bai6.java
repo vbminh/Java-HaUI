@@ -32,5 +32,4 @@ public class stt_50_VuBinhMinh_bai6 {
 		}
 		return true;
 	}
-
 }

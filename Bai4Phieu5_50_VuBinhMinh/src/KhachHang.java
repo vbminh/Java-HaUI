@@ -15,15 +15,15 @@ public class KhachHang {
 	public Scanner sc = new Scanner(System.in);
 
 	public void input() {
-		System.out.print("Tên khách hàng: ");
+		System.out.print("Ten khach hang: ");
 		tenkh = sc.nextLine();
-		System.out.print("Địa chỉ: ");
+		System.out.print("Dia chi: ");
 		diachi = sc.nextLine();
 	}
 	
 	@Override
 	public String toString() {
-		return String.format("\t%-30s %-30s","Khách hàng: " + tenkh,"Địa chỉ: " + diachi);
+		return String.format("\t%-30s %-30s","Khach hang: " + tenkh,"Dia chi: " + diachi);
 	}
 	
 }

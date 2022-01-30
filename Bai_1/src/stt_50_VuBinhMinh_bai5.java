@@ -37,5 +37,4 @@ Scanner sc = new Scanner(System.in);
 		}
 		return n;
 	}
-
 }

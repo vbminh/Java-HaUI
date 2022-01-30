@@ -43,4 +43,5 @@ public class stt_50_VuBinhMinh_bai4 {
 		if (m == 1) return n;
 		return factorial(n) / (factorial(m)*factorial(n - m));
 	}
+	
 }

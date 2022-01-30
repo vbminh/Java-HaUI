@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Phieu_TH1/src"/>
+	<classpathentry kind="src" path="THBT1/src"/>
+	<classpathentry kind="src" path="THBT2/src"/>
+	<classpathentry kind="output" path="THBT2/build/classes"/>
+</classpath>

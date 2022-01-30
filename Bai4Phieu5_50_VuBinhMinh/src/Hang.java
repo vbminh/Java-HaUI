@@ -15,6 +15,10 @@ public class Hang {
 		this.soluong = soluong;
 	}
 	
+	public int getSoluong() {
+		return soluong;
+	}
+	
 	public String getTenhang() {
 		return tenhang;
 	}
@@ -26,11 +30,11 @@ public class Hang {
 	public Scanner sc = new Scanner(System.in);
 
 	public void input() {
-		System.out.print("Tên hàng: ");
+		System.out.print("Ten hang: ");
 		tenhang = sc.nextLine();
-		System.out.print("Đơn giá: ");
+		System.out.print("Don gia: ");
 		dongia = sc.nextDouble();
-		System.out.print("Số lượng: ");
+		System.out.print("So luong: ");
 		soluong = sc.nextInt();
 	}
 	
@@ -42,6 +46,6 @@ public class Hang {
 	@Override
 	public boolean equals(Object obj) {
 		Hang h = (Hang)obj;
-		return this.tenhang.equals(h.tenhang);
+		return this.tenhang.toLowerCase().equals(h.tenhang.toLowerCase());
 	}
 }
