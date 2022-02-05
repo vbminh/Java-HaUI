@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.lang.Object?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.BGHController">
+   <children>
+      <MenuBar fx:id="menubar" prefHeight="25.0" prefWidth="1120.0" AnchorPane.bottomAnchor="625.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+         <menus>
+          <Menu mnemonicParsing="false" text="Hệ thống">
+          	<graphic>
+          		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
+                	<image>
+          	          <Image url="@../../images/sysIcon.png" />
+                    </image>
+                </ImageView>
+          	</graphic>
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Tài khoản" />
+                  <Menu mnemonicParsing="false" text="Quản lý">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Đăng nhập" />
+                        <MenuItem mnemonicParsing="false" text="Báo cáo" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Close">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+
+          <Menu mnemonicParsing="false" text="Trợ giúp">
+          	<graphic>
+          		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
+                	<image>
+          	          <Image url="@../../images/helpicon.png" />
+                    </image>
+                </ImageView>
+          	</graphic>
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      
+      <ToolBar layoutY="32.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <items>
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Thêm" />
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xem danh sách" />
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Cập nhập" />
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Tìm kiếm" />
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xóa" />
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="In danh sách" />
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Tiện ích" />
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Phản hồi" />
+          <Button mnemonicParsing="false" onAction="#back" style="-fx-font-size: 12; -fx-text-fill: black" text="Quay lại" />
+        </items>
+      </ToolBar>
+      
+      <TableView layoutX="250.0" layoutY="50.0" prefHeight="340.0" prefWidth="420.0" style="-fx-font-size: 12" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Mã nhân viên" />
+          <TableColumn maxWidth="200.0" prefWidth="200.0" text="Họ và tên" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Giới tính" />
+          <TableColumn maxWidth="150.0" prefWidth="150.0" text="Ngày sinh" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Chức danh" />
+          <TableColumn maxWidth="120.0" prefWidth="120.0" text="Chức vụ" />
+          <TableColumn maxWidth="150.0" prefWidth="150.0" text="Ngày vào làm" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Lương cơ bản" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Ghi chú" />
+        </columns>
+      </TableView>
+      
+      <TabPane layoutX="250.0" layoutY="380.0" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 12" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="390.0">
+        <tabs>
+          <Tab style="-fx-font-weight: bold;" text="Thông tin chi tiết">
+            <content>
+              <AnchorPane id="infid" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-font-size: 15">
+                     <children>
+                        <ImageView fitHeight="180.0" fitWidth="140.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
+                           <image>
+                              <Image url="@../../images/user.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="220.0" layoutY="10.0" text="Mã nhân viên" />
+                        <Label layoutX="220.0" layoutY="40.0" text="Họ và tên" />
+                        <Label layoutX="220.0" layoutY="70.0" text="Giới tính" />
+                        <Label layoutX="220.0" layoutY="100.0" text="Ngày sinh" />
+                        <Label layoutX="220.0" layoutY="130.0" text="Địa chỉ" />
+                        <Label layoutX="220.0" layoutY="160.0" text="Điện thoại" />
+                        <Label layoutX="220.0" layoutY="190.0" text="Email" />
+                        
+                        <Text id="infma" disable="true" layoutX="350.0" layoutY="26.0" strokeWidth="0.0" />
+                        <Text id="inften" disable="true" layoutX="350.0" layoutY="56.0" strokeWidth="0.0" />
+                        <Text id="infgtinh" disable="true" layoutX="350.0" layoutY="86.0" strokeWidth="0.0" />
+                        <Text id="infNgsinh" disable="true" layoutX="350.0" layoutY="116.0" strokeWidth="0.0" />
+                        <Text id="infCCCD" disable="true" layoutX="350.0" layoutY="176.0" strokeWidth="0.0" />
+                        <Text id="infsdt" disable="true" layoutX="350.0" layoutY="206.0" strokeWidth="0.0" />
+                        <Text id="infemail" disable="true" layoutX="350.0" layoutY="146.0" strokeWidth="0.0" />
+                        
+                        <Label layoutX="650.0" layoutY="10.0" text="Số CMND/CCCD" />
+                        <Label layoutX="650.0" layoutY="40.0" text="Ngày cấp" />
+                        <Label layoutX="650.0" layoutY="70.0" text="Dân tộc" />
+                        <Label layoutX="650.0" layoutY="100.0" text="Tôn giáo" />
+                        <Label layoutX="650.0" layoutY="130.0" text="Quê quán" />
+                        <Label layoutX="650.0" layoutY="160.0" text="Tình trạng hôn nhân" />
+                        
+                        <Text disable="true" layoutX="850.0" layoutY="26.0" strokeWidth="0.0" text="130987654321" />
+                        <Text disable="true" layoutX="850.0" layoutY="56.0" strokeWidth="0.0" text="22/12/2019" />
+                        <Text disable="true" layoutX="850.0" layoutY="86.0" strokeWidth="0.0" text="Kinh" />
+                        <Text disable="true" layoutX="850.0" layoutY="116.0" strokeWidth="0.0" text="Không" />
+                        <Text disable="true" layoutX="850.0" layoutY="146.0" strokeWidth="0.0" text="Viet Nam, Việt Nam" />
+                        <Text disable="true" layoutX="850.0" layoutY="176.0" strokeWidth="0.0" text="Đã kết hôn" />      
+                     </children>
+            	</AnchorPane>
+            </content>
+          </Tab>
+          
+          <Tab style="-fx-font-weight: bold;" text="Hợp đồng lao động">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          
+            <Tab style="-fx-font-weight: bold;" text="Thông tin bảo hiểm">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            
+            <Tab style="-fx-font-weight: bold;" text="Lịch sử chấm công">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
