@@ -57,7 +57,15 @@
       
       <ToolBar layoutY="32.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
         <items>
-          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Thêm" />
+          <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Thêm" >
+          	<graphic>
+          		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
+                	<image>
+          	          <Image url="@../../images/helpicon.png" />
+                    </image>
+                </ImageView>
+          	</graphic>
+          </Button>
           <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xem danh sách" />
           <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Cập nhập" />
           <Button mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Tìm kiếm" />
