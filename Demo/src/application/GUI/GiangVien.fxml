@@ -57,7 +57,7 @@
       
       <ToolBar layoutY="32.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
         <items>
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Thêm">
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Thêm" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -67,7 +67,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Cập nhập">
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Cập nhập" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -77,7 +77,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Tìm kiếm">
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Tìm kiếm" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -87,7 +87,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xóa">
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xóa" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -97,7 +97,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xem bảng lương">
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xem bảng lương" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -107,7 +107,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="In danh sách">
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="In danh sách" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -117,7 +117,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Tiện ích">
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Tiện ích" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -127,7 +127,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Phản hồi">
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Phản hồi" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -137,7 +137,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" onAction="#back" style="-fx-font-size: 12; -fx-text-fill: black" text="Hỗ trợ">
+          <Button focusTraversable="false" mnemonicParsing="false" onAction="#back" style="-fx-font-size: 12; -fx-text-fill: black" text="Hỗ trợ" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -147,7 +147,7 @@
           	</graphic>
           </Button>
           
-          <Button focusTraversable="false" mnemonicParsing="false" onAction="#back" style="-fx-font-size: 12; -fx-text-fill: black" text="Quay lại">
+          <Button focusTraversable="false" mnemonicParsing="false" onAction="#back" style="-fx-font-size: 12; -fx-text-fill: black" text="Quay lại" >
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
@@ -161,15 +161,15 @@
       
       <TableView layoutX="250.0" layoutY="50.0" prefHeight="340.0" prefWidth="420.0" style="-fx-font-size: 12" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
         <columns>
-          <TableColumn maxWidth="120.0" prefWidth="100.0" text="Mã nhân viên" />
-          <TableColumn maxWidth="180.0" prefWidth="180.0" text="Họ và tên" />
-          <TableColumn maxWidth="126.0" text="Giới tính" />
-          <TableColumn maxWidth="150.0" prefWidth="120.0" text="Ngày sinh" />
-          <TableColumn maxWidth="120.0" prefWidth="100.0" text="Học vị" />
-          <TableColumn maxWidth="120.0" prefWidth="100.0" text="Chức vụ" />
-          <TableColumn maxWidth="150.0" prefWidth="120.0" text="Ngày vào làm" />
-          <TableColumn maxWidth="120.0" prefWidth="120.0" text="Lương cơ bản" />
-          <TableColumn maxWidth="200.0" prefWidth="200.0" text="Ghi chú" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Mã nhân viên" />
+          <TableColumn maxWidth="200.0" prefWidth="200.0" text="Họ và tên" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Giới tính" />
+          <TableColumn maxWidth="150.0" prefWidth="150.0" text="Ngày sinh" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Chức danh" />
+          <TableColumn maxWidth="120.0" prefWidth="120.0" text="Chức vụ" />
+          <TableColumn maxWidth="150.0" prefWidth="150.0" text="Ngày vào làm" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Lương cơ bản" />
+          <TableColumn maxWidth="100.0" prefWidth="100.0" text="Ghi chú" />
         </columns>
       </TableView>
       
@@ -218,19 +218,19 @@
             </content>
           </Tab>
           
-          <Tab style="-fx-font-weight: bold;" text="Bằng cấp-Chứng chỉ">
+          <Tab style="-fx-font-weight: bold;" text="Hợp đồng lao động">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
           </Tab>
           
-            <Tab style="-fx-font-weight: bold;" text="Bảo hiểm xã hội">
+            <Tab style="-fx-font-weight: bold;" text="Thông tin bảo hiểm">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                </content>
             </Tab>
             
-            <Tab style="-fx-font-weight: bold;" text="Quá trình công tác">
+            <Tab style="-fx-font-weight: bold;" text="Lịch sử chấm công">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                </content>

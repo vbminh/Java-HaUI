@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import java.lang.Object?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.BGHController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <MenuBar id="menubar" prefHeight="25.0" prefWidth="1120.0" AnchorPane.bottomAnchor="625.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+      <MenuBar fx:id="menubar" prefHeight="25.0" prefWidth="1120.0" AnchorPane.bottomAnchor="625.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
          <menus>
           <Menu mnemonicParsing="false" text="Hệ thống">
           	<graphic>
@@ -67,6 +67,16 @@
           	</graphic>
           </Button>
           
+          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xem danh sách">
+          	<graphic>
+          		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
+                	<image>
+          	          <Image url="@../../images/view.png" />
+                    </image>
+                </ImageView>
+          	</graphic>
+          </Button>
+          
           <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Cập nhập">
           	<graphic>
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
@@ -92,16 +102,6 @@
           		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
                 	<image>
           	          <Image url="@../../images/del.png" />
-                    </image>
-                </ImageView>
-          	</graphic>
-          </Button>
-          
-          <Button focusTraversable="false" mnemonicParsing="false" style="-fx-font-size: 12; -fx-text-fill: black" text="Xem bảng lương">
-          	<graphic>
-          		<ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="35.0">
-                	<image>
-          	          <Image url="@../../images/view.png" />
                     </image>
                 </ImageView>
           	</graphic>
@@ -159,17 +159,17 @@
         </items>
       </ToolBar>
       
-      <TableView layoutX="250.0" layoutY="50.0" prefHeight="340.0" prefWidth="420.0" style="-fx-font-size: 12" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+      <TableView fx:id="table" layoutX="250.0" layoutY="50.0" prefHeight="340.0" prefWidth="420.0" style="-fx-font-size: 12" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
         <columns>
-          <TableColumn maxWidth="120.0" prefWidth="100.0" text="Mã nhân viên" />
-          <TableColumn maxWidth="180.0" prefWidth="180.0" text="Họ và tên" />
-          <TableColumn maxWidth="126.0" text="Giới tính" />
-          <TableColumn maxWidth="150.0" prefWidth="120.0" text="Ngày sinh" />
-          <TableColumn maxWidth="120.0" prefWidth="100.0" text="Học vị" />
-          <TableColumn maxWidth="120.0" prefWidth="100.0" text="Chức vụ" />
-          <TableColumn maxWidth="150.0" prefWidth="120.0" text="Ngày vào làm" />
-          <TableColumn maxWidth="120.0" prefWidth="120.0" text="Lương cơ bản" />
-          <TableColumn maxWidth="200.0" prefWidth="200.0" text="Ghi chú" />
+          <TableColumn fx:id="manvcolumn" maxWidth="100.0" prefWidth="100.0" text="Mã nhân viên" />
+          <TableColumn fx:id="hotencolumn" maxWidth="200.0" prefWidth="200.0" text="Họ và tên" />
+          <TableColumn fx:id="gtinhcolumn" maxWidth="100.0" prefWidth="100.0" text="Giới tính" />
+          <TableColumn fx:id="ngsinhcolumn" maxWidth="150.0" prefWidth="150.0" text="Ngày sinh" />
+          <TableColumn fx:id="chucdanhcolumn" maxWidth="100.0" prefWidth="100.0" text="Chức danh" />
+          <TableColumn fx:id="chucvucolumn" maxWidth="120.0" prefWidth="120.0" text="Chức vụ" />
+          <TableColumn fx:id="ngayvaolamcolumn" maxWidth="150.0" prefWidth="150.0" text="Ngày vào làm" />
+          <TableColumn fx:id="luongcolumn" maxWidth="100.0" prefWidth="100.0" text="Lương cơ bản" />
+          <TableColumn fx:id="ghichucolumn" maxWidth="100.0" prefWidth="100.0" text="Ghi chú" />
         </columns>
       </TableView>
       
@@ -218,19 +218,19 @@
             </content>
           </Tab>
           
-          <Tab style="-fx-font-weight: bold;" text="Bằng cấp-Chứng chỉ">
+          <Tab style="-fx-font-weight: bold;" text="Hợp đồng lao động">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
           </Tab>
           
-            <Tab style="-fx-font-weight: bold;" text="Bảo hiểm xã hội">
+            <Tab style="-fx-font-weight: bold;" text="Thông tin bảo hiểm">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                </content>
             </Tab>
             
-            <Tab style="-fx-font-weight: bold;" text="Quá trình công tác">
+            <Tab style="-fx-font-weight: bold;" text="Lịch sử chấm công">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                </content>
