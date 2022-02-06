@@ -6,7 +6,6 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-Created Time: 2022-02-05 22:12:13.728
 This is a continuation of log file E:\Practice\GitHub\Java-HaUI\.metadata\.bak_1.log
 Created Time: 2022-02-06 11:35:42.502
 
