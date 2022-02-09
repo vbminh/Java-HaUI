@@ -3,7 +3,6 @@ module audi {
 	requires javafx.fxml;
 	requires javafx.graphics;
 	requires java.sql;
-	requires sqljdbc42;
 	requires jtds;
 	
 	opens application;

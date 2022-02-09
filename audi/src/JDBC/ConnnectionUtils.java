@@ -3,8 +3,6 @@ package JDBC;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
-
 public class ConnnectionUtils {
 
 	public static void main(String[] args) throws SQLException,
