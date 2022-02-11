@@ -3,7 +3,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class ThiSinh implements Serializable{
-	private static int currentID = 1000;
+	private static int currentID = 1000; //tạo biến static lưu id thí sinh đầu tiên
 	private String soBD;
 	private String hoTen;
 	private float diemToan;
@@ -11,14 +11,14 @@ public class ThiSinh implements Serializable{
 	private float diemHoa;
 	
 	public ThiSinh() {
-		soBD= "TS" + String.valueOf(currentID++);hoTen="no-name";diemToan=diemLy=diemHoa=0f;
-		}
-	public ThiSinh(String soBD) {
-		this.soBD = soBD;
+		//SBD tự động tăng dần mỗi lần thêm mới 1TS
+		soBD= "TS" + String.valueOf(currentID++);
+		hoTen="no-name";
+		diemToan=diemLy=diemHoa=0f;
 	}
 	
-	public void id() {
-		
+	public ThiSinh(String soBD) {
+		this.soBD = soBD;
 	}
 	
 	@Override
@@ -43,15 +43,9 @@ public class ThiSinh implements Serializable{
 		return true;
 	}
 	
-	public void setSoBD(String soBD) throws Exception{
-		if(soBD.trim().equals(""))
-			throw new Exception("So bao danh khong duoc trong!");
-		this.soBD = soBD;
-	}
-	
 	public void setHoTen(String hoTen)throws Exception {
 		if(hoTen.trim().equals(""))
-			throw new Exception("Ho ten khong duocc trong!");
+			throw new Exception("Ho ten khong duoc trong!");
 		this.hoTen = hoTen;
 	}
 	
@@ -76,25 +70,25 @@ public class ThiSinh implements Serializable{
 	public void nhap(){
 		try {
 			Scanner sc=new Scanner(System.in);
-			System.out.print("\tNhap ho ten thi sinh:");
+			System.out.print("\tNhập họ tên thí sinh:");
 			setHoTen(sc.nextLine());
-			System.out.print("\tNhap diem toan:");
+			System.out.print("\tNhập điểm toán:");
 			setDiemToan(sc.nextFloat());
-			System.out.print("\tNhap diem ly:");
+			System.out.print("\tNhập điểm lý:");
 			setDiemLy(sc.nextFloat());
-			System.out.print("\tNhap diem hoa:");
+			System.out.print("\tNhập điểm hóa:");
 			setDiemHoa(sc.nextFloat());
 		}
 		catch (Exception ex) {
-			System.out.print("co loi: "+ex.toString());
+			System.out.print("có lỗi: "+ex.toString());
 		}
 	}
 
 	@Override
 	public String toString() {
 		String tsValue;
-		tsValue= "SBD:"+soBD+"\t Ho ten:"+hoTen+"\tdiem toan:"+diemToan+"\t diem ly";
-		tsValue=tsValue +diemLy+"\tdiem hoa"+diemHoa;
+		tsValue= "SBD:"+soBD+"\t Ho ten:"+hoTen+"\tdiem toan:"+diemToan+"\t diem ly:";
+		tsValue=tsValue +diemLy+"\tdiem hoa:"+diemHoa;
 		return tsValue;
 	}
 	
@@ -108,18 +102,5 @@ public class ThiSinh implements Serializable{
 	public String getSoBD() {
 		return soBD;
 	}
-	public String getHoTen() {
-		return hoTen;
-	}
-	public float getDiemToan() {
-		return diemToan;
-	}
-	public float getDiemLy() {
-		return diemLy;
-	}
-	public float getDiemHoa() {
-		return diemHoa;
-	}
-	
 	
 }

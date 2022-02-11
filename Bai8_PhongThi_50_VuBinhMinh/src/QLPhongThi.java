@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class QLPhongThi {
 	private static PhongThi phongthi = null;
-	static String fileName="d:thiSinh.txt";
+	static String fileName="thiSinh.txt";
 	private static DBEngine db = new DBEngine();
 	
 	public static void main(String[] args) {
