@@ -5,6 +5,6 @@ module audi {
 	requires java.sql;
 	requires jtds;
 	
-	opens application;
+	opens application to javafx.fxml, javafx.graphics, javafx.controls;
 	opens DAO;
 }

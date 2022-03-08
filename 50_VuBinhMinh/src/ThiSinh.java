@@ -12,7 +12,7 @@ public class ThiSinh implements Serializable{
 	
 	public ThiSinh() {
 		//SBD tự động tăng dần mỗi lần thêm mới 1TS
-		soBD= "TS" + String.valueOf(currentID++);
+		soBD= "TS" + currentID++;
 		hoTen="no-name";
 		diemToan=diemLy=diemHoa=0f;
 	}
