@@ -1,4 +1,4 @@
-import java.util.Scanner;
+﻿import java.util.Scanner;
 
 public class stt_50_VuBinhMinh_bai2 {
 
@@ -19,7 +19,7 @@ public class stt_50_VuBinhMinh_bai2 {
 			float delta = (float) (Math.pow(b, 2) - 4*a*c);
 			
 			if(delta > 0) {
-				System.out.println("\nPhương trình bậc 2: " + a + "x^2 + " + b + "x + " + c + " = 0 có 2 nghiệm phân biệt:");
+				System.out.println("\nPhương trình bậc 2: " + a + "x^2 + " + b + "x + " + c + " = 0 có 2 nghiệm phân biệt::");
 				System.out.print("x1 = " + (-b + Math.sqrt(delta))/(2*a) + "\tx2 = " + (-b - Math.sqrt(delta))/(2*a));
 			}
 			else if(delta == 0) {
